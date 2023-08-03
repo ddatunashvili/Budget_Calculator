@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ბიუჯეტის კალკულატორი</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="დაითვალე საიტის საფასური">
+  <meta property="og:description" content="სივრცე შენი ციფრული განვითარებისათვის">
+  <meta property="og:image" content="https://codespace.ge/calculator/logo-dark.png">
+  <meta property="og:url" content="https://codespace.ge">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <div class="container">
+    <h1>დეველოპმენტის საფასური</h1>
+    <form id="budgetForm">
+      <label for="projectType">პროექტის არჩევა</label>
+      <select id="projectType" required>
+        <option value="">ვებსაიტის ტიპი</option>
+        <option value="Personal Website">პირადი </option>
+        <option value="Business Website">ბიზნესი</option>
+        <option value="Blog Website">ბლოგი</option>
+        <option value="Portfolio Website">პორტფოლიო</option>
+        <option value="Photography Website">ფოტოგრაფი</option>
+        <option value="Event Website">ივენთები</option>
+        <option value="Community Website">ქომუნითი</option>
+        <option value="Magazine Website">ნიუსი</option>
+        <option value="E-commerce Website">შოპი</option>
+        <option value="Membership Website">წევრი</option>
+        <option value="Business Directory">რესტორანი/სასტუმრო</option>
+        <option value="Educational Website">საგანმანათლებლო</option>
+        <option value="Travel Website">მოგზაურობა</option>
+        <option value="Real Estate Website">უძრავი ქონება</option>
+        <option value="Food and Recipe Website">კვება და რეცეპტები</option>
+      </select>
+
+      <label for="pages">გვერდების რაოდენობა</label>
+      <input type="number" id="pages" required>
+
+      <label for="duration">რამდენი კვირა?</label>
+      <input type="number" id="duration" step="0.1" required>
+
+      <label for="hardness">ფუნქციონალის სირთულე</label>
+      <select id="hardness" required>
+      <option value="0">მარტივი</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+
+      <button type="button" id="calculateBtn">გამოთვლა</button>
+    </form>
+
+    <div id="result">*შეავსეთ ყველა ველი</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
